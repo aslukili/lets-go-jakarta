@@ -9,7 +9,9 @@
       <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
       <property name="hibernate.connection.username" value="admin"/>
       <property name="hibernate.connection.password" value="abdeslamLK21@mysql"/>
-      <property name="hibernate.hbm2ddl.auto" value="create"/>
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      <property name="current_session_context_class" value="thread"/>
+      <property name="hibernate.current_session_context_class" value="org.hibernate.context.internal.ThreadLocalSessionContext" />
       <property name="hibernate.show_sql" value="true"/>
     </properties>
   </persistence-unit>
